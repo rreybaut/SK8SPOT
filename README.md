@@ -1,1 +1,5 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+"Connecter des amis et des spots pour votre session skate"
+
+"Connecting friends and spots for skateboarding"
+
+![Cover](https://github.com/rreybaut/SK8SPOT/master/app/assets/images/favicon_640x320.jpg)
