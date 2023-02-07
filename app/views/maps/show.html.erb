@@ -1,0 +1,12 @@
+<div class="container">
+  <h1><%= "Map #{@map.id}" %></h1>
+  <h5>Address: </h5>
+  <%= @map.localisation %>
+  <br>
+  <h5>Latitude: </h5>
+  <%= @map.latitude %>
+  <br>
+  <h5>Longitude: </h5>
+  <%= @map.longitude %>
+  <%= link_to "< Maps", maps_path, class:"btn btn-primary" %>
+</div>
