@@ -1,29 +1,30 @@
 class MapsController < ApplicationController
   before_action :authenticate_user!, only: [:new]
-  before_action :set_offer, only: %i[show edit update destroy]
+  before_action :set_map, only: %i[show edit update destroy]
 
   def index
     @maps = Map.all
   end
 
   def show
-
   end
 
   def new
-    @map = Map.all
+    @map = Map.new
   end
 
   def create
-
   end
 
   def destroy
-
   end
 
-end
+  private
 
+  def set_map
+    @map = Map.find(params[:id])
+  end
+end
 
 #   def show
 #   end

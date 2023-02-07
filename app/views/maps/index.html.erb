@@ -1,3 +1,24 @@
-<h1>Welcome to the first map</h1>
+<div class="container">
+  <h1>Welcome to our maps</h1>
+  <div class="mapcontainer">
+    <% @maps.each do |map| %>
+      <div class="mapbox">
+        <ul>
+          <h3><%= "Map #{map.id}" %></h3>
+          <h5>Address: </h5>
+          <%= map.localisation %>
+          <br>
+          <h5>Latitude: </h5>
+          <%= map.latitude %>
+          <br>
+          <h5>Longitude: </h5>
+          <%= map.longitude %>
+          <br>
+          <%= link_to "See the map", map_path(map), class:"btn btn-success" %>
+        </ul>
+      </div>
+    <% end %>
+  </div>
 
-<%= link_to "Home", root_path, class:"btn btn-primary" %>
+  <%= link_to "< Home", root_path, class:"btn btn-primary" %>
+</div>

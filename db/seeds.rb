@@ -7,7 +7,7 @@
 #   Character.create(name: "Luke", movie: movies.first)
 Map.destroy_all
 
-falicon_map = Map.create!(latitude: 43.72660870179519, longitude: 7.25574260756179, localisation: "5 Dom. de Falicon, 06100 Nice")
-jean_bouin_map = Map.create!(latitude: 43.70735915813036, longitude: 7.281364355447859, localisation: "2 Rue Jean Allègre, 06000 Nice")
-monaco_map = Map.create!(latitude: 43.73111139357798, longitude: 7.4263183295077, localisation: "11 Av. Saint-Martin, 98000 Monaco")
-mandelieu_map = Map.create!(latitude: 43.54085663101774, longitude: 6.934555505965151, localisation: "La Provençale, 06210 Mandelieu-la-Napoule")
+Map.create!(user_id: User.last.id, latitude: 43.72660870179519, longitude: 7.25574260756179, localisation: "5 Dom. de Falicon, 06100 Nice")
+Map.create!(user_id: User.last.id, latitude: 43.70735915813036, longitude: 7.281364355447859, localisation: "2 Rue Jean Allègre, 06000 Nice")
+Map.create!(user_id: User.last.id, latitude: 43.73111139357798, longitude: 7.4263183295077, localisation: "11 Av. Saint-Martin, 98000 Monaco")
+Map.create!(user_id: User.last.id, latitude: 43.54085663101774, longitude: 6.934555505965151, localisation: "La Provençale, 06210 Mandelieu-la-Napoule")
